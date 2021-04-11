@@ -14,4 +14,4 @@ python-dotenv = "*"
 python_version = "3.8"
 
 [scripts]
-dev = "python ./__main__.py"
+dev = "python ./src/main.py"
