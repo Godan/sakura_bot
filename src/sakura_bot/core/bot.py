@@ -2,6 +2,7 @@ import traceback
 
 import discord
 from discord.ext import commands
+import random
 
 
 class SakuraBot(commands.Bot):
@@ -11,10 +12,10 @@ class SakuraBot(commands.Bot):
         self.load_cogs()
 
     def load_cogs(self):
-        cogs = ["sakura_bot.cogs.game"]
+        cogs = ["sakura_bot.cogs.game", "sakura_bot.cogs.darekara"]
         for cog in cogs:
             self.load_extension(cog)
-            print(cog + "をロードしました")
+            print(cog + "をロードしました \n")
 
     # 起動用の補助関数です
     def run(self):
