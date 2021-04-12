@@ -15,6 +15,5 @@ class Game(commands.Cog):
             f'{a}D{b}の結果は{sum(result)}です．\n内訳{result}'
         )
 
-
 def setup(bot):
     return bot.add_cog(Game(bot))
